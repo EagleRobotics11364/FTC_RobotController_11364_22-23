@@ -44,7 +44,8 @@ public class Beta_TeleOp extends LinearOpMode {
             leftRearMotor.setPower(pivot + vertical - horizontal);
 
             //Arm Extension
-            double value = gamepad2.left_stick_y
+            double value = gamepad2.left_stick_y;
+            armExtension.setPower(value);
         }
 
         rightFrontMotor.setPower(0.0);
